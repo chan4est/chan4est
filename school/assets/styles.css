@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#header {
+  margin: auto;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#blue {
+  background-color: blue;
+  color: white;
+  height: 250px;
+  width: 250px;
+  line-height: 250px;
+  text-align: center;
+  margin: auto;
+}
+
+#verification {
+  padding: 10px;
+  height: 100px;
+  width: 250px;
+  background-color: #58D68D;
+}

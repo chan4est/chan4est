@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Showout to Shreyas for coming up with the origin Java (script)! -->
+  <head>
+      <meta charset="UTF-8">
+      <title>Sponsors</title>
+      <script type="text/javascript" src="./assets/js/main.js"></script>
+      <!-- Icon -->
+      <link rel="apple-touch-icon" sizes="180x180" href="./assets/icon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="./assets/icon/favicon-16x16.png">
+      <link rel="manifest" href="./assets/icon/site.webmanifest">
+      <link rel="mask-icon" href="./assets/icon/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#da532c">
+      <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div id='header'>
+      
+    </div>
+    <div id='body'>
+      <div id='modules'>
+        First Name: 
+        <input type="text" id="fname"><br>
+        Last Name: 
+        <input type="text" id="lname"><br>
+        Company Email Address: 
+        <input type="text" id="cname"><br>
+        <!-- Copies the emails to clipboard immediately -->
+        <button onclick="generateEmails()">Get Emails</button>
+        <button onclick="clearScreen('fname','lname','cname','emails')">Clear</button>
+        <br/>
+      </div>
+      <div id='reults'>
+        <p id = 'emails'> </p>
+      </div>
+    <div>
+    <div id='footer'>
+      
+    </div>
+  </body>
+</html>

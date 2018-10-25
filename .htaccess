@@ -1,0 +1,4 @@
+# .htaccess rewrite
+
+RewriteEngine On
+RewriteRule ([^.]+)\.html /$1
