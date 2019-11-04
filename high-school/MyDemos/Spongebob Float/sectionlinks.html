@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Float and Clear - Divs</title>
+<style type="text/css" media="screen">
+body
+{
+	background-color:yellow;
+	font-family:Tahoma, Geneva, sans-serif;
+	line-height:1.5;
+}
+#wrapper
+{
+	/* The wrapper keeps all the divs together as one block*/
+	background-color:green;
+	width:950px;
+	margin:auto;
+}
+
+#leftcolumn
+{
+	background-color:blue;
+	width:150px;
+	float:left; /* the float setting allows the next elements to move up */
+}
+
+#content
+{
+	background-color:pink;
+	width:650px;
+	float:left; /* the float setting allows the next elements to move up */
+}
+
+#rightcolumn
+{
+	background-color:red;
+	width:150px;
+	float:left; /* the float setting allows the next elements to move up */
+}
+
+#leftcolumn, #content, #rightcolumn
+{
+	height:400px; /* since the columns share this height, use one rule */
+}
+
+#footer
+{
+	background-color:silver;
+	height:45px;
+	clear:both; /*We want to stop the float setting */
+}
+
+#leftcolumn a {
+	color:white;
+}
+
+#leftcolumn a:hover {
+	color:yellow;
+}
+
+#content a {
+	color:orange;
+}
+
+#content a:hover {
+	color:red;
+}
+
+#rightcolumn  a {
+	color:#0FF;
+}
+
+#rightcolumn  a:hover {
+	color:green;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Assignment009c3</h1>
+<h2>Float and Clear - Divs</h2>
+
+<div id="wrapper">
+
+
+    <div id="leftcolumn">
+
+
+<a href="http://yahoo.com">Yahoo</a> <br />
+
+<a href="http://google.com/">Google</a>
+
+    </div>
+
+
+
+
+    <div id="content">
+<a href="http://yahoo.com">Yahoo</a> <br />
+
+<a href="http://google.com/">Google</a>
+
+        </p>
+        
+  </div>
+
+
+
+
+    <div id="rightcolumn">
+<a href="http://yahoo.com">Yahoo</a> <br />
+
+<a href="http://google.com/">Google</a>
+
+    </div>
+
+
+
+
+    <div id="footer">
+    	<p>The footer - clear:both;</p>
+    </div>
+
+
+</div>
+<!-- end wrapper -->
+
+</body>
+</html>

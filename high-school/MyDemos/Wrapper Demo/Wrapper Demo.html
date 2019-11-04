@@ -1,0 +1,160 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>CSS - 2 column layout</title>
+
+
+
+<!--
+
+Note:
+
+On our Web pages, in general, we use widths of:
+
+container: 960px
+wrapper:  950px
+leftcolumn: 150px;
+content: 650px;
+rightcolumn: 150px;
+
+You must include padding and borders in your calculation!
+
+images for the header are made a little larger at 970px
+some is not visible.
+
+
+
+ -->
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+*
+{
+/*reset margin and padding for all browsers*/
+margin:0;
+padding:0;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, dt, li, hr, legend, input, button, textarea, select, address, table
+{
+margin-top: 1.2em;
+}
+/* end the reset */
+
+
+
+body
+{
+margin:0px 0px 0px 0px;
+color:#ffffff;
+background-color:yellow;
+font-family:Arial, Helvetica, sans-serif;
+}
+div#container
+{
+width: 960px;
+padding-top:100px;
+margin:auto;
+background-color:purple;
+}
+div#wrapper
+{
+border:2px solid black;
+width:950px;
+margin:auto;
+background-color:green;
+color:black;
+background-image:url(Images/wrapper.gif);
+background-position:center top;
+background-repeat:repeat-y;
+}
+
+
+div#header
+{
+/*total width is 950.  930 + 10 padding left + 10 padding right */
+width:930px;
+padding:10px;
+height:150px;
+background-color:orange;
+
+}
+
+
+div#leftcolumn
+{
+/*total width is 150.  130 + 10 padding left + 10 padding right */
+width:130px;
+padding: 10px;
+height:500px; /*temporary*/
+float:left;
+
+}
+
+div#content
+{
+/*total width is 800.  780 + 10 padding left + 10 padding right */
+width:780px;
+padding:10px;
+min-height:500px;  /*temporary*/
+float:left;
+
+}
+
+
+div#footer
+{
+width:930px;
+height:30px;
+padding:10px;
+background-color:silver;
+color:black;
+clear:both; /*ignore floats */
+}
+</style>
+</head>
+<body>
+<div id="container">
+	This is the container
+
+	<div id="wrapper"> 
+		<!--This is the wrapper.  Covered by other divs! -->
+	
+		<div id="header">
+			This is the header
+		</div>
+		
+		<div id="leftcolumn">
+			This is the leftcolumn
+		</div>
+		
+		<div id="content">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at sem eu urna imperdiet elementum et non arcu. Pellentesque eu commodo nisl, sed convallis ligula. Quisque a elementum tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis eu turpis tincidunt, tempor est condimentum, condimentum dolor. Curabitur eget leo vitae felis condimentum molestie. Cras euismod eu turpis non faucibus. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur elit risus, tempus vitae neque non, tincidunt laoreet velit.
+
+Ut posuere gravida magna, quis placerat magna rutrum sit amet. Suspendisse euismod mollis tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam non nibh tellus. Duis eu est venenatis urna posuere congue vitae ut nunc. Aliquam ultrices lacinia tristique. Nullam faucibus aliquam nibh, sit amet vestibulum lectus ultrices in. Praesent sodales leo ullamcorper mi iaculis vulputate. Vivamus nec tellus dictum diam suscipit tempor. Donec lacinia sollicitudin tortor, eget bibendum turpis vestibulum eu. Morbi aliquet vehicula turpis, eu pretium nisi. Cras fermentum nibh eget ultricies vehicula. Pellentesque in tincidunt erat. Integer condimentum ligula mi, ac pellentesque lorem elementum id.
+
+Aliquam pulvinar dapibus orci, at vestibulum tellus suscipit vel. Fusce ut vestibulum augue. Praesent commodo turpis adipiscing tortor auctor, vel suscipit turpis aliquet. In hac habitasse platea dictumst. Nunc fermentum augue eget turpis molestie placerat. Pellentesque sit amet interdum eros. Vestibulum pellentesque faucibus arcu ac interdum. In hac habitasse platea dictumst. Suspendisse nec sagittis dui, nec sodales mi. Cras pulvinar dolor vel tempor dictum.
+
+Duis at faucibus lacus. Nam accumsan laoreet purus sit amet ornare. Aliquam bibendum dolor nulla, ac rutrum sapien condimentum ac. Aenean mattis, leo elementum rutrum tempor, eros nibh iaculis odio, in euismod lectus velit in purus. Pellentesque libero massa, suscipit vel libero in, lobortis viverra metus. Nullam porta rhoncus laoreet. Aenean sit amet augue ut lorem hendrerit pharetra. Nullam magna nisl, porta sit amet consectetur non, pharetra vel nibh. Nam at massa tortor. Pellentesque sit amet tortor est. Sed tincidunt est sed metus condimentum, id luctus tellus cursus. Morbi dapibus tellus at erat vulputate sodales. Morbi ligula tellus, viverra in egestas at, blandit varius diam. Phasellus ultrices tellus et lacus consequat ultrices. Ut luctus arcu at dolor porta adipiscing. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+Phasellus odio sem, mattis non elementum in, egestas vel orci. Suspendisse gravida elit quis sem consequat sodales nec eget tellus. Aliquam erat volutpat. Sed laoreet lobortis tristique. Proin nunc nisi, viverra et condimentum vitae, interdum sed nisi. Phasellus tincidunt magna mauris, sit amet euismod arcu sodales vel. Mauris quis congue magna. Nullam at mi suscipit, posuere tortor in, pulvinar nisi.
+
+Vestibulum semper tellus vel tempus porttitor. Fusce nec justo nisl. Praesent sed ligula blandit, tincidunt ligula nec, egestas felis. Suspendisse potenti. Mauris ac viverra neque, a vestibulum enim. Nunc eget rhoncus nulla. Nulla pellentesque luctus eros nec semper. Phasellus fringilla dolor quam, et pharetra odio porttitor euismod. Nullam ut suscipit lectus, sit amet sagittis elit. Donec eu rutrum leo, ut rutrum dolor.
+		</div>		
+		
+		<div id="footer">
+			This is the footer
+		</div>		
+	
+		
+	</div>
+</div>
+</body>
+</html>

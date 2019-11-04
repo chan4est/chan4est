@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Floating Divs - Classes</title>
+</head>
+
+<style type="text/css" media="screen">
+
+body {
+	background-color:yellow;
+}
+
+.wrapper {
+	background-color:green;
+	width:900px;
+	margin:auto;
+}
+
+.leftcolumn {
+	background-color:blue;
+	width:300px;
+	float:left;
+}
+
+.content {
+	background-color:pink;
+	width:500px;
+	float:left;
+}
+
+.rightcolumn {
+	background-color:red;
+	width:100px;
+	float:left;
+}
+
+.leftcolumn, .content, .rightcolumn {
+	height:600px;
+}
+
+#footer {
+	background-color:silver;
+	height:50px;	
+	clear:both;
+}
+
+
+</style>
+
+<body>
+
+<div class="wrapper">
+	
+    <div class="leftcolumn">
+    left column
+    </div>
+    
+    <div class="content">
+    content
+    </div>
+    
+    <div class="rightcolumn">
+    rightcolumn
+    </div>
+    
+    <div id="footer">
+    footer
+    </div>
+    
+</div>
+
+</body>
+</html>
