@@ -10,10 +10,16 @@ app.use(express.static("./", {
     extensions: ['html', 'htm', 'pdf'],
 }));
 
+
+
 // routes
 app.get("/", function(req, res) {
   res.render("index");
 })
+
+app.get('*', function(req, res){
+  res.send(404)
+});
 
 app.listen(port, function() {
   console.log("Website Up!")

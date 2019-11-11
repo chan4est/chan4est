@@ -1,11 +1,11 @@
 {
   "name": "psite",
-  "version" : "1.0.0",
-  "scripts" : {
-    "start" : "node server.js"
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
   },
   "dependencies": {
-    "express" : "4.13.3"
+    "express": "^4.17.1"
   },
   "author": "Chandler Forrest",
   "license": "ISC"
